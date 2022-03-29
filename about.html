@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IF=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <!--Header Section-->
+    <header>
+        <div class="navbar">
+            <div class="nav-links">
+                <ul class="links">
+                    <li><a href="index.html"><i class="fas fa-house"></i> Home</a></li><span> > </span>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!--Header Home Section-->
+    <section class="home-sec">
+        <div class="container">
+            <div class="image">
+                <img src="images/fsltutorial.png" alt="home">
+            </div>
+        </div>
+    </section>
+
+    <!--About Us-->
+    <div class="hero">
+        <h1>About Us</h1>
+        <div class="review-box">
+            <div id="slide">
+                <div class="card">
+                   <div class="profile">
+                        <img src="images/mission.png">
+                       <div>
+                           <h3>Mission</h3>
+                       </div>
+                   </div>
+                   <div>
+                    <p>We will provide knowledge that will lead to equal opportunity and treatment from the hearing community. We will build a new society that the generation can experience.</p>
+                    </div> 
+                </div>
+                <div class="card">
+                   <div class="profile">
+                        <img src="images/vision.png">
+                       <div>
+                           <h3>Vision</h3>
+                       </div>
+                   </div>
+                   <div>
+                    <p>We dream a equal opportunity and treat for the deaf community. Accessable knowledge that will improve communication of the both hearing and deaf community.</p>
+                    </div>
+                </div>
+                <div class="card">
+                   <div class="profile">
+                        <img src="images/value.png">
+                       <div>
+                           <h3>Value</h3>
+                       </div>
+                   </div>
+                   <div>
+                    <p> - Respectful
+                        <br>- Future Generations
+                        <br>- Freedom
+                        <br>- Love</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sidebar">
+                <img src="images/up-arrow.png" id="downArrow">
+                <img src="images/down-arrow1.png" id="upArrow">
+            </div>
+            
+        </div>
+    </div>
+    
+    
+    <script>
+        var slide = document.getElementById("slide");
+        var upArrow = document.getElementById("upArrow");
+        var downArrow = document.getElementById("downArrow");
+        
+        let x = 0;
+        
+        upArrow.onclick = function(){
+            if(x > "-600"){
+                x = x - 300;
+                slide.style.top = x + "px";
+            }
+        }
+        downArrow.onclick = function(){
+            if(x < 0){
+                x = x + 300;
+                slide.style.top = x + "px";
+            }   
+        }
+    </script>
+
+    <!---Our Team-->
+    <section class="team">
+        <input type="radio" name="dot" id="one">
+        <input type="radio" name="dot" id="two">
+        <div class="row">
+          <div class="heading">
+              <h1> Our Team </h1>
+          </div>
+      </div>
+        <div class="main-card">
+          <div class="cards">
+            <div class="card">
+             <div class="content">
+               <div class="img">
+                 <img src="images/mariel1.jpg" alt="">
+               </div>
+               <div class="details">
+                 <div class="name">Mariel Acayen</div>
+                 <div class="job">Programmer</div>
+               </div>
+               <div class="media-icons">
+                 <a href="https://www.facebook.com/mariel.delacruz.5437923/"><i class="fab fa-facebook-f"></i></a>
+                 <a href="https://instagram.com/yheng_style/"><i class="fab fa-instagram"></i></a>
+                 <a href="https://youtube.com/channel/UCBUqk4GVbE6Yky6fAPJAZBg"><i class="fab fa-youtube"></i></a>
+               </div>
+             </div>
+            </div>
+            <div class="card">
+             <div class="content">
+               <div class="img">
+                 <img src="images/joyce1.jpg" alt="">
+               </div>
+               <div class="details">
+                 <div class="name">Joyce Bernadeth Dagohoy</div>
+                 <div class="job">Researcher</div>
+               </div>
+               <div class="media-icons">
+                 <a href="https://www.facebook.com/joycebernadeth.dagohoy"><i class="fab fa-facebook-f"></i></a>
+                 <a href="https://www.instagram.com/jbd__21/"><i class="fab fa-instagram"></i></a>
+                 <a href="https://www.youtube.com/channel/UCZ5vbyfvvoOGaW7rrcv5lJw"><i class="fab fa-youtube"></i></a>
+               </div>
+             </div>
+            </div>
+            <div class="card">
+             <div class="content">
+               <div class="img">
+                 <img src="images/lalaine1.jpg" alt="">
+               </div>
+               <div class="details">
+                 <div class="name">Frances Lalaine Lozada</div>
+                 <div class="job">Researcher</div>
+               </div>
+               <div class="media-icons">
+                 <a href="https://www.facebook.com/franceslalaine.j.lozada"><i class="fab fa-facebook-f"></i></a>
+                 <a href="https://www.instagram.com/laineee_12/"><i class="fab fa-instagram"></i></a>
+                 <a href="https://youtube.com/channel/UC9xtI8-YXl-GqBcvvfAZuOA"><i class="fab fa-youtube"></i></a>
+               </div>
+             </div>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="card">
+             <div class="content">
+               <div class="img">
+                 <img src="images/john1.jpg" alt="">
+               </div>
+               <div class="details">
+                 <div class="name">John Paolo Miranda</div>
+                 <div class="job">Designer</div>
+               </div>
+               <div class="media-icons">
+                 <a href="https://m.facebook.com/johnpaolo.miranda.127"><i class="fab fa-facebook-f"></i></a>
+                 <a href="https://www.instagram.com/mjohnpaolo/"><i class="fab fa-instagram"></i></a>
+                 <a href="https://youtube.com/channel/UC4rNBJYhoTXeKouOSYja9yw"><i class="fab fa-youtube"></i></a>
+               </div>
+             </div>
+            </div>
+            <div class="card">
+             <div class="content">
+               <div class="img">
+                 <img src="images/janine1.png" alt="">
+               </div>
+               <div class="details">
+                 <div class="name">Janine Navarra</div>
+                 <div class="job">Supporter</div>
+               </div>
+               <div class="media-icons">
+                 <a href="https://www.facebook.com/janine.navarra"><i class="fab fa-facebook-f"></i></a>
+                 <a href="https://instagram.com/lady.janine5/"><i class="fab fa-instagram"></i></a>
+                 <a href="https://youtube.com/channel/UCQSoBJG88LxVIbfR9FmIYvQ"><i class="fab fa-youtube"></i></a>
+               </div>
+             </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                <div class="img">
+                  <img src="images/kevin.jpg" alt="">
+                </div>
+                <div class="details">
+                  <div class="name">Mr. Kevin Bermudo</div>
+                  <div class="job">Adviser</div>
+                </div>
+                <div class="media-icons">
+                  <a href="https://www.facebook.com/BatmanKebs"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://www.instagram.com/aznvin_/"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+              </div>
+             </div>
+          </div>
+        </div>
+        <div class="button">
+          <label for="one" class=" active one"></label>
+          <label for="two" class="two"></label>
+        </div>
+      </section>
+
+    <!--Footer-->
+    <footer>
+        <div class="bottom">
+          <center>
+            <span class="credit">Created By <a href="https://www.youtube.com/channel/UCYUFIJY3LVURWCer_I8qkKA">FSLTutorial</a> | </span>
+            <span class="far fa-copyright"></span><span> 2022 All Rights Reserved.</span>
+          </center>
+        </div>
+      </footer>
+
+      <!--Scroll Top-->
+    <button class="go-top-btn">
+      <img src="images/Double-Arrow-Up.png" alt="arrow up">
+    </button>
+    <script src="js/scrolltop.js"></script>
+</body>
+</html>
